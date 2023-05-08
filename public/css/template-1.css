@@ -58,6 +58,7 @@ a {
 }
 
 a:hover {
+  text-decoration: underline;
   color: blue;
 }
 
@@ -146,9 +147,9 @@ footer div:first-child p {
   font-size: 20px;
   line-height: 23px;
   color: #212529;
-  margin: 0;
+  margin-bottom: 12;
 }
 
-.footer_list a {
-  margin-top: 12px;
+.footer_list a:not(:last-child) {
+  margin-bottom: 12px;
 }
