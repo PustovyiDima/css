@@ -1,5 +1,5 @@
-<div class="nav {{#if isColumn}} navColumn {{/if}}">
+<div class="nav {{#if isColumn}} navColumn {{else}} navInline{{/if}}">
     {{#each data}}
-    <a href="{{url}}">{{text}}</a>
+    <a href="{{url}}" class="nav_link">{{text}}</a>
     {{/each}}
 </div>
