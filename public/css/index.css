@@ -1,7 +1,40 @@
-html {
-  max-width: 720px;
+ html {
+   max-width: 720px;
+ }
+
+ body {
+   background: #fff;
+   font-size: 62.5%;
+
+ }
+
+ /*
+.card-dark {
+  background-color: #b6a6a6;
 }
 
-body {
-  background: #fff;
+.input-dark {
+  background-color: #686464;
+  font-weight: 800;
 }
+
+.input-dark[required] {
+  background-color: #598eb1;
+}
+.input-dark[type='email'] {
+  background-color: #b1599e;
+}
+.big-text::first-line {
+  color: rgb(11, 230, 84);
+}
+.input-dark::placeholder {
+  color: aqua;
+}
+
+.big-text::before,.big-text::after {
+  content: '"';
+  color: #000;
+}
+ */
+
+

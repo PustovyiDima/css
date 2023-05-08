@@ -1,0 +1,57 @@
+<div class="page ">
+    <div class="page-content">
+        <header>
+            <div class="logo ">
+                <span class="badge text-bg-primary">D</span>
+            </div>
+            <div class="header-nav">
+                {{#each header}}
+                <a href="{{url}}">{{text}}</a>
+                {{/each}}
+
+            </div>
+        </header>
+        {{#with hero}}
+        <div class="title mtop">
+            <h1>{{title}}</h1>
+            <p>{{text}}</p>
+        </div>
+        {{/with}}
+
+        <div class="card_list row gx-4 mtop">
+            {{#each plans}}
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">{{name}}</div>
+                    <div class="card-body">
+                        <p> <b>${{price}}</b> / mo</p>
+                        {{#each features}}
+                        <p>{{this}}</p>
+                        {{/each}}
+                        <button
+                            class="btn {{#if @first}} btn-outline-primary {{else}}btn-primary{{/if}}">{{button}}</button>
+
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+        <footer class="row mtop">
+            <div class="col-3">
+                <div class="logo">
+                    <span class="badge text-bg-primary">D</span>
+                </div>
+                <p>Copiring 2023</p>
+            </div>
+            {{#each footer}}
+            <div class="footer_list col-3">
+                <p>{{title}}</p>
+                {{#each links}}
+                <a href="{{url}}">{{text}}</a>
+                {{/each}}
+            </div>
+            {{/each}}
+        </footer>
+    </div>
+</div>
