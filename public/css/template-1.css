@@ -3,12 +3,10 @@ body {
   font-style: normal;
 }
 
-
 .page {
   background-color: #fff;
   margin: 0 auto;
   max-width: 960px;
-
 }
 
 header {
@@ -37,7 +35,6 @@ header div {
 .mtop {
   margin-top: 80px;
 }
-
 
 .nav {
   display: flex;
@@ -109,11 +106,16 @@ a:hover {
   color: #212529;
 }
 
-.card-body p {
+.card-body p:not(:last-of-type) {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #212529;
+  margin-bottom: 12px;
+}
+
+.card-body p:last-of-type {
+  margin-bottom: 24px;
 }
 
 .card-body button {
