@@ -1,14 +1,11 @@
 <div class="page ">
     <div class="page-content">
-        <header>
-            <div class="logo ">
+        <header class="row">
+            <div class="logo col-9">
                 <span class="badge text-bg-primary">D</span>
             </div>
-            <div class="header-nav">
-                {{#each header}}
-                <a href="{{url}}">{{text}}</a>
-                {{/each}}
-
+            <div class="col-3">
+                {{>links data=header url=url text=text isColumn=false}}
             </div>
         </header>
         {{#with hero}}
@@ -47,9 +44,7 @@
             {{#each footer}}
             <div class="footer_list col-3">
                 <p>{{title}}</p>
-                {{#each links}}
-                <a href="{{url}}">{{text}}</a>
-                {{/each}}
+                {{> links data=links url=url text=text isColumn=true}}
             </div>
             {{/each}}
         </footer>

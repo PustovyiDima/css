@@ -39,20 +39,26 @@ header div {
 }
 
 
-.header-nav {
+.nav {
   display: flex;
-  align-items: center;
-  width: 236px;
+  justify-content: start;
   justify-content: space-between;
 }
 
-.header-nav a {
+.navColumn {
+  flex-direction: column;
+}
+
+a {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #343A40;
   text-decoration: none;
+}
 
+a:hover {
+  color: blue;
 }
 
 .title {
@@ -144,14 +150,5 @@ footer div:first-child p {
 }
 
 .footer_list a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #6C757D;
   margin-top: 12px;
-  text-decoration: none;
-}
-
-a:hover {
-  color: blue;
 }
