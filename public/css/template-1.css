@@ -87,6 +87,7 @@ footer div:first-child p {
   font-weight: 500;
   font-size: 56px;
   line-height: 66px;
+  text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.233);
 }
 
 .title p {
