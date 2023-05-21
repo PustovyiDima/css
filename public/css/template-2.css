@@ -1,0 +1,311 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.page {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.page-content>*:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+header {
+  padding: 24px;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.logo span {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+/* .page_block {
+  margin-top: 80px;
+} */
+
+.header_nav {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.nav {
+  display: block;
+}
+
+
+.nav_link {
+  font-size: 16px;
+  color: #343A40;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.navColumn>.nav_link {
+  display: block;
+}
+
+.navInline>.nav_link:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.navColumn>.nav_link:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+footer {
+  border-top: 1px solid #DEE2E6;
+  padding: 24px 0;
+}
+
+footer div:first-child p {
+  margin-top: 12px;
+}
+
+.footer_list p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #212529;
+  margin-bottom: 12;
+}
+
+.hero {
+  background: #343A40;
+  border-radius: 24px;
+  color: #fff;
+  padding: 80px;
+}
+
+.hero h1 {
+  height: 66px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+}
+
+.hero p {
+  max-width: 675px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 24px;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  border: 1px solid #007BFF;
+  border-radius: 4.8px;
+  font-size: 16px;
+  max-width: 248px;
+  width: 100%;
+  height: 40px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #81aedf;
+}
+
+.preview {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid #DEE2E6;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.preview_header>span:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.preview_date {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6C757D;
+}
+
+.preview_category {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.preview>*:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.preview_title {
+  display: block;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #343A40;
+}
+
+.preview_description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.preview_category_1 {
+  color: #007BFF;
+}
+
+.preview_category_3 {
+  color: #FF0000;
+}
+
+.preview_category_2 {
+  color: #198754;
+}
+
+.preview_category_4 {
+  color: #FF7A00;
+}
+
+.list_title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #212529;
+  margin: 0;
+}
+
+.list_header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #DEE2E6;
+  margin-bottom: 40px;
+}
+
+.category_btn_list {
+  text-align: right;
+}
+
+.category_button {
+  font-size: 16px;
+  color: #6C757D;
+  padding: 10px 16px;
+  border: 1px solid #6C757D;
+  border-radius: 32px;
+  opacity: 0.65;
+  line-height: 100%;
+
+}
+
+.category_button:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.category_button:hover {
+  opacity: 1;
+}
+
+.list {}
+
+.list>*:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.post {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.post>*:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.post_title {
+  display: block;
+  font-weight: 500;
+  font-size: 27px;
+  color: #212529;
+}
+
+.post_info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.post_author {
+  color: #0050FF;
+}
+
+.post_description {
+  color: #212529;
+  font-size: 16px;
+}
+
+
+.list_aside {
+  padding-left: 80px;
+}
+
+.list_aside>*:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.about {
+  background: #F8F9FA;
+  padding: 24px;
+}
+
+.about_title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #212529;
+  margin-bottom: 12px;
+}
+
+.about_text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #212529;
+  line-height: 175%;
+}
+
+.link_list {
+  padding: 24px;
+}
+
+.link_list>*:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.link_title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #212529;
+  display: block;
+}
+
+.link_item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #007BFF;
+  text-decoration: none;
+  display: block;
+
+}
+
+.link_item:hover {
+  text-decoration: underline;
+}
