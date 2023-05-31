@@ -757,9 +757,9 @@ router.get('/template-2', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-3', function (req, res) {
-  res.render('template-3', {
-    layout: 'template-3',
+router.get('/template-4', function (req, res) {
+  res.render('template-4', {
+    layout: 'template-4',
     page: {
       title: 'Example Page',
     },
