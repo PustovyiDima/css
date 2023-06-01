@@ -373,9 +373,6 @@ router.get('/template-2', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
-// router.get Створює нам один ентпоїнт
-
-//           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/template-4', function (req, res) {
   res.render('template-4', {
     layout: 'template-4',
