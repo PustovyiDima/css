@@ -1,0 +1,54 @@
+<header class="header">
+    <div class="logo">
+        <span class="badge text-bg-primary">D</span>
+    </div>
+    <div class="header_nav">
+        {{>links data=header url=url text=text isColumn=false}}
+    </div>
+</header>
+{{#with main}}
+<section class="main">
+    <img src={{image}} alt="image" class="main_img">
+    <div class="main_description">
+        <h1>{{heading}}</h1>
+        <p>{{descriotion}}</p>
+        <a href={{href}} class="main_button">{{button}}</a>
+    </div>
+</section>
+{{/with}}
+
+<section class="featured">
+    {{#each featured}}
+    <div class="feat_item">
+        <img src={{photo}} alt="photo" class="feat-img">
+        <h2>{{heading}}</h2>
+        <p>{{info}}</p>
+        <a href={{linkUrl}}>{{linkText}}</a>
+    </div>
+    {{/each}}
+</section>
+
+<section class="actions">
+    {{#each actions}}
+    <div class="action_item">
+        <p>{{heading}}</p>
+        <a href="{{url}}">{{text}}</a>
+    </div>
+    {{/each}}
+</section>
+
+
+<footer class="footer">
+    <div class="footer_copyring">
+        <div class="logo">
+            <span class="badge text-bg-primary">D</span>
+        </div>
+        <p>Copyring 2023-2024</p>
+    </div>
+    {{#each footer}}
+    <div class="footer_list">
+        <p>{{title}}</p>
+        {{> links data=links url=url text=text isColumn=true}}
+    </div>
+    {{/each}}
+</footer>
