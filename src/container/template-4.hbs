@@ -1,11 +1,5 @@
-<header class="header">
-    <div class="logo">
-        <span class="badge text-bg-primary">D</span>
-    </div>
-    <div class="header_nav">
-        {{>links data=header url=url text=text isColumn=false}}
-    </div>
-</header>
+{{> header}}
+
 {{#with main}}
 <section class="main">
     <img src={{image}} alt="image" class="main_img">
@@ -38,17 +32,4 @@
 </section>
 
 
-<footer class="footer">
-    <div class="footer_copyring">
-        <div class="logo">
-            <span class="badge text-bg-primary">D</span>
-        </div>
-        <p>Copyring 2023-2024</p>
-    </div>
-    {{#each footer}}
-    <div class="footer_list">
-        <p>{{title}}</p>
-        {{> links data=links url=url text=text isColumn=true}}
-    </div>
-    {{/each}}
-</footer>
+{{> footer}}
