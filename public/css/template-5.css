@@ -1,0 +1,326 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.page {
+  background-color: #fff;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.page-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 80px;
+}
+
+header {
+  padding: 24px;
+  border-bottom: 1px solid #DEE2E6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.logo span {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+.header_nav {
+  width: fit-content;
+  margin-left: auto;
+  display: flex;
+  gap: 24px;
+
+}
+
+
+.nav {
+  display: flex;
+}
+
+.nav_link {
+  font-size: 16px;
+  color: #343A40;
+  text-decoration: none;
+
+
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.navColumn {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navInline {
+  gap: 24px;
+  flex-direction: row;
+}
+
+
+
+
+.footer {
+  border-top: 1px solid #DEE2E6;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+footer div:first-child p {
+  margin-top: 12px;
+}
+
+.footer_list p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #212529;
+  margin-bottom: 12;
+}
+
+
+/* _________________________ */
+
+.main {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.messages {
+  max-width: 620px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.messages>*:not(:last-child) {
+  border-bottom: 1px solid #D3DEE9;
+}
+
+.messages_title {
+  padding: 0px 0px 12px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #212529;
+}
+
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  padding-right: 36px;
+}
+
+.msg_name {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 500;
+}
+
+.msg_text {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+}
+
+.msg_day {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6C757D;
+}
+
+.message_link {
+  font-size: 14px;
+  color: #007BFF;
+  text-align: right;
+  /* !!! */
+  align-self: flex-end;
+  text-decoration: none;
+
+  line-height: 100%;
+
+  transition-duration: 0.5s;
+  transition-property: all;
+
+  border-bottom: 1px solid transparent;
+}
+
+
+.message_link:hover {
+  opacity: 0.8;
+  border-bottom-color: #007BFF;
+}
+
+.form {
+  max-width: 340px;
+  width: 100%;
+
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form_title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 100%;
+  color: #212529;
+
+}
+
+.form_input_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+
+.form_input {
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+
+.form_input::placeholder {
+  font-size: 16px;
+  color: #212529;
+}
+
+.form_checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+
+.form_checkbox>label {
+  font-size: 16px;
+  color: #212529;
+  cursor: pointer;
+}
+
+.form_checkbox>input {
+  display: none;
+}
+
+
+
+.form_checkbox>input~.checkmark {
+  width: 13px;
+  height: 13px;
+  background: #FFFFFF;
+  border: 1px solid #767676;
+  border-radius: 4px;
+}
+
+
+.form_checkbox>input:checked~.checkmark {
+  background: blue;
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+
+
+.form_button {
+  background: #0D6EFD;
+  border: 1px solid #0D6EFD;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.7s;
+}
+
+.form_button:hover {
+  color: #0D6EFD;
+  background-color: transparent;
+}
+
+.form_info {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #6C757D;
+}
+
+
+
+
+
+
+
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.advan {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 8px;
+  border: 1px solid #E4EAF2;
+  border-radius: 12px;
+
+  /* !!! */
+  width: 100%;
+
+}
+
+.advan_title {
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  color: #212529;
+}
+
+.advan_text {
+  font-size: 16px;
+  line-height: 150%;
+  color: #767676;
+}

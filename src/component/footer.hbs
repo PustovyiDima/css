@@ -1,0 +1,14 @@
+<footer class="footer">
+    <div class="footer_copyring">
+        <div class="logo">
+            <span class="badge text-bg-primary">D</span>
+        </div>
+        <p>Copyring 2023-2024</p>
+    </div>
+    {{#each footer}}
+    <div class="footer_list">
+        <p>{{title}}</p>
+        {{> links data=links url=url text=text isColumn=true}}
+    </div>
+    {{/each}}
+</footer>
