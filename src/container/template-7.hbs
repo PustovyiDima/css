@@ -1,0 +1,59 @@
+<div class="page">
+    {{#with header}}
+    <header class="header">
+        <div class="header_nav">
+            <div class="logo">{{brandName}}</div>
+            <div class="header_links">
+                {{#each links}}
+                <a href="{{url}}" class="link">{{text}}</a>
+                {{/each}}
+            </div>
+        </div>
+        <div class="header_ad">
+            <div class="ad_text">
+                <span>Ad</span>
+                <a href="{{ad.url}}">{{ad.text}}</a>
+            </div>
+            <div class="ad_usersOnline">
+                Users online: {{userOnline}}
+            </div>
+        </div>
+    </header>
+    {{/with}}
+    {{#with hero}}
+    <section class="hero">
+        <h1 class="hero_title">{{title}}</h1>
+        <p class="hero_text">{{description}}</p>
+        <a href="{{button.url}}" class="hero_btn">{{button.text}}</a>
+    </section>
+    {{/with}}
+    <div class="about">
+        <strong class="about_title">{{about.heading}}</strong>
+        <p class="about_text">{{about.info}}</p>
+    </div>
+    <section class="articles">
+        <div class="articles_header">
+            <p class="articles_header_title">Our Articles</p>
+            <a href="#" class="articles_header_link">View all</a>
+        </div>
+        <div class="articles_list">
+            {{#each articles}}
+            <dic class="articless_card">
+                <img src="{{photo}}" alt="" class="articless_card_img">
+                <strong class="articless_card_title">{{name}}</strong>
+                <p class="articless_card_text">{{description}}</p>
+                <a href="" class="articless_card_link">Read All</a>
+            </dic>
+            {{/each}}
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_links">
+            {{#each footer.pages}}
+            <a href="{{path}}" class="footer_link">{{name}}</a>
+            {{/each}}
+        </div>
+        <div class="footer_autor">{{footer.copyright}}</div>
+    </footer>
+</div>
