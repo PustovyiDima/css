@@ -1,0 +1,139 @@
+{{> header}}
+
+{{!-- ____________________ --}}
+
+{{!-- <main class="main">
+    {{#with messages}}
+    <div class="messages">
+        <h1 class="messages_title">{{title}}</h1>
+        {{#each list}}
+        <div class="msg">
+            <strong class="msg_name">
+                {{name}}
+            </strong>
+            <p class="msg_text">
+                {{message}}
+            </p>
+            <span class="msg_day">
+                {{day}}
+            </span>
+
+        </div>
+        {{/each}}
+        <a href="#" class="message_link">All messages</a>
+
+
+
+
+    </div>
+    {{/with}}
+    {{#with form}}
+    <form class="form">
+        <h2 class="form_title">
+            {{title}}
+        </h2>
+        <div class="form_input_list">
+            {{#each inputs}}
+            <input type={{type}} placeholder={{placeholder}} class="form_input" name="{{name}}" id="form_input_{{id}}">
+            {{/each}}
+        </div>
+
+
+        {{#with checkbox}}
+        <div class="form_checkbox">
+            <input type="checkbox" name="{{name}}" id="{{name}}">
+            <span class="checkmark"></span>
+            <label for="{{name}}">{{label}}</label>
+        </div>
+        {{/with}}
+
+        <button type="submit" class="form_button">{{button}} </button>
+        <p class="form_info">
+            {{info}}
+        </p>
+    </form>
+    {{/with}}
+
+</main>
+
+<div class="advantages">
+    {{#each advantages}}
+    <div class="advan">
+        <strong class="advan_title">
+            {{title}}
+        </strong>
+        <p class="advan_text">
+            {{text}}
+        </p>
+    </div>
+    {{/each}}
+</div> --}}
+
+
+
+<main class="main">
+    <div class="info">
+        <h1 class="info_title">{{info.title}}</h1>
+        <p class="info_text">{{info.description}}</p>
+    </div>
+    {{#with form}}
+    <form class="form">
+        <div class="form_input_list">
+            {{#each inputs}}
+            <input class="form_input_item" type="{{type}}" id="form_input_{{id}}" name="{{name}}"
+                placeholder="{{placeholder}}">
+            {{/each}}
+        </div>
+        <div class="checkbox">
+            {{#with checkbox}}
+            <input type="checkbox" name="{{name}}" id="check_{{name}}">
+            <span class="check_item"></span>
+            <label for="check_{{name}}">{{label}}</label>
+            {{/with}}
+        </div>
+        <button type="submit" class="form_btn">{{button}}</button>
+        <div class="form_line"></div>
+        <p class="form_info">{{info}}</p>
+    </form>
+    {{/with}}
+</main>
+{{#with updates}}
+<section class="updates">
+    <h2 class="upd_title">{{title}}</h2>
+    {{#each list}}
+    <div class="upd_list_item">
+        <img src="#" alt="" class="upd_img">
+        <div class="upd_item_info">
+            <p class="upd_nickname">@{{nickname}}</p>
+            <p class="upd_text">{{description}}</p>
+        </div>
+
+    </div>
+    {{/each}}
+    <a href="#" class="upd_link">All updates</a>
+</section>
+{{/with}}
+
+{{#with expirience}}
+
+<section class="expirience">
+    <h1 class="expirience_title">{{title}}</h1>
+    <span class="expirience_badge">{{badge}}</span>
+    <div class="expirience_list">
+        {{#each list}}
+        <div class="expirience_list_item">
+            <strong class="expirience_name">{{name}}</strong>
+            <p class="expirience_text">{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+</section>
+{{/with}}
+
+
+
+
+
+{{!-- ____________________ --}}
+
+{{> footer}}
