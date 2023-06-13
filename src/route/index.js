@@ -13,6 +13,15 @@ router.get('/', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
+router.get('/slack', function (req, res) {
+  res.render('slack', {
+    layout: 'slack',
+    page: {
+      title: 'Slack Page',
+    },
+  })
+})
+
 router.get('/template-1', function (req, res) {
   res.render('template-1', {
     layout: 'template-1',
@@ -661,7 +670,6 @@ router.get('/template-5', function (req, res) {
 
 // ================================================================
 
-
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
@@ -768,7 +776,7 @@ router.get('/template-7', function (req, res) {
         },
       ],
     },
-    })
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
 
@@ -931,7 +939,6 @@ router.get('/template-6', function (req, res) {
         ],
       },
     ],
-
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
