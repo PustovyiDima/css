@@ -9,7 +9,50 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
+  res.render('index', {
+    nav: [
+      {
+        urt: 'template-1',
+        text: 'template-1',
+        isDisabled: false,
+      },
+      {
+        urt: 'template-2',
+        text: 'template-2',
+        isDisabled: false,
+      },
+      {
+        urt: 'template-3',
+        text: 'template-3',
+        isDisabled: true,
+      },
+      {
+        urt: 'template-4',
+        text: 'template-4',
+        isDisabled: false,
+      },
+      {
+        urt: 'template-5',
+        text: 'template-5',
+        isDisabled: false,
+      },
+      {
+        urt: 'template-6',
+        text: 'template-6',
+        isDisabled: false,
+      },
+      {
+        urt: 'template-7',
+        text: 'template-7',
+        isDisabled: false,
+      },
+      {
+        urt: 'slack',
+        text: 'slack',
+        isDisabled: false,
+      },
+    ],
+  })
   //                  ↑↑ сюди вводимо JSON дані
 })
 
